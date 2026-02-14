@@ -1,0 +1,66 @@
+export const storeroomTheme = {
+    name: 'storeroom',
+    label: 'UnExplored',
+    icon: '📦',
+    colors: {
+        primary: '#F59E0B',
+        secondary: '#D97706',
+        accent: '#FBBF24',
+        surface: 'rgba(245, 158, 11, 0.08)',
+        dark: {
+            background: 'linear-gradient(135deg, #1A1207 0%, #271E0B 40%, #1F170A 100%)',
+            surface: 'rgba(39, 30, 11, 0.85)',
+            text: '#FEF3C7',
+            textSecondary: '#D9C88E',
+            cardBg: 'rgba(245, 158, 11, 0.06)',
+            border: 'rgba(245, 158, 11, 0.15)',
+        },
+        light: {
+            background: 'linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 40%, #FFFDF5 100%)',
+            surface: 'rgba(255, 255, 255, 0.85)',
+            text: '#1F170A',
+            textSecondary: '#6B5C3A',
+            cardBg: 'rgba(245, 158, 11, 0.04)',
+            border: 'rgba(245, 158, 11, 0.2)',
+        },
+    },
+    typography: {
+        heading: "'Bogita', sans-serif",
+        body: "'Mulich', sans-serif",
+    },
+    animation: 'shelves',
+    aboutMe: [
+        "Welcome to my Store Room of hidden talents — a space where curiosity refuses to be confined.",
+        "I am a multidimensional person who believes exploration should never be limited to a single field. From experimenting in culinary arts to building custom electronics with Arduino, I find inspiration in the most unexpected places. Each pursuit, no matter how different, adds another layer to how I think, create, and solve problems.",
+        "My strength lies not just in what I have achieved, but in what remains unexplored within me.",
+        "There is a deeper potential — ideas not yet released, innovations not yet built, mastery still in motion. I connect disciplines, bridge logic with imagination, and see patterns where others see separation.",
+        "I am not limited by a single path. I am building, learning, and expanding — unlocking the layers of a mind that has only begun to reveal itself.",
+        "While some of these skills may not always stand in the spotlight, they continuously refine my creativity and expand my ability to connect ideas across disciplines.",
+        "This is where curiosity lives freely. This is where unexplored potential waits. This is the room where different worlds meet."
+    ],
+    skills: [
+        { name: 'Cooking & Cuisine', level: 90, icon: '👨‍🍳' },
+        { name: 'Science Communicator', level: 80, icon: '🎙️' },
+        { name: 'Electronics', level: 45, icon: '🔌' },
+        { name: 'Automation', level: 35, icon: '🏠' },
+        { name: 'Tech Enthusiasm', level: 95, icon: '💡' },
+        { name: 'Content Creation', level: 10, icon: '📹' },
+        { name: 'Research Instrument Design', level: 72, icon: '🔧' },
+        { name: 'Fashion Design', level: 40, icon: '👗' },
+        { name: 'Public Speaker', level: 5, icon: '🎤' },
+        { name: 'Innovations', level: 60, icon: '🚀' },
+        { name: 'Designs', level: 65, icon: '🎨' },
+        { name: 'Fitness', level: 70, icon: '🏋️‍♂️' },
+    ],
+    heroTitle: 'Polymath',
+    heroSubtitle: 'A room full of hidden talents',
+    heroDescription: 'From cooking to electronics, script writing to home automation — a collection of diverse pursuits that fuel creativity and innovation.',
+    socialLinks: [
+        { platform: 'Instagram', url: 'https://www.instagram.com/kanmani_bharathi_j/', icon: 'instagram' },
+        { platform: 'Facebook', url: 'https://www.facebook.com/kanmanibharathi.j', icon: 'facebook' },
+        { platform: 'Twitter', url: 'https://x.com/Bharathi__JK', icon: 'x-twitter' },
+        { platform: 'Youtube', url: 'https://www.youtube.com/@insights-pi', icon: 'youtube' },
+        { platform: 'Instagram ', url: 'https://www.instagram.com/echoes_of_jk/', icon: 'instagram' },
+        { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/kanmani-bharathi-j/', icon: 'linkedin' }
+    ]
+};

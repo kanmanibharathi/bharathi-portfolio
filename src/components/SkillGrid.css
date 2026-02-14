@@ -1,0 +1,131 @@
+/* ---- Skill Grid ---- */
+#skills-section {
+    padding-top: 0 !important;
+    padding-bottom: var(--space-md) !important;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.section-subtitle {
+    margin-top: var(--space-sm);
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+    gap: var(--space-lg);
+}
+
+.swipe-indicator {
+    display: none;
+    width: 100%;
+    margin-top: var(--space-xl);
+    padding: 0 var(--space-md);
+    pointer-events: none;
+}
+
+.swipe-line {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--color-primary) 20%,
+            var(--color-primary) 80%,
+            transparent 100%);
+    opacity: 0.3;
+    position: relative;
+}
+
+.swipe-line::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 40%;
+    width: 20%;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--color-primary);
+    animation: swipe-hint 3s infinite ease-in-out;
+}
+
+@keyframes swipe-hint {
+
+    0%,
+    100% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(50%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-scroll-wrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    .skills-scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: var(--space-sm);
+        cursor: grab;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE 11 */
+        scroll-snap-type: x mandatory;
+        padding-right: var(--space-xl);
+        /* Allowance for clipping */
+        transition: transform 0.2s ease;
+    }
+
+    .skills-scroll-container.dragging {
+        cursor: grabbing;
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+
+    .skills-scroll-container::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari */
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-auto-columns: 280px;
+        grid-auto-flow: column;
+        gap: var(--space-md);
+        width: max-content;
+        padding-bottom: var(--space-lg);
+        padding-right: var(--space-xl);
+    }
+
+    .skills-grid>* {
+        scroll-snap-align: start;
+        height: 100%;
+        display: flex;
+        user-select: none;
+    }
+
+    .swipe-indicator {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-auto-columns: 240px;
+        gap: var(--space-sm);
+    }
+}

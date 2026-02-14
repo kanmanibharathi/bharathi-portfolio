@@ -1,0 +1,123 @@
+/* ---- Timeline Section ---- */
+.timeline-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: -60px;
+}
+
+.timeline-section .section-header {
+    margin-bottom: var(--space-xs);
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom,
+            transparent,
+            var(--color-primary),
+            var(--color-accent),
+            var(--color-primary),
+            transparent);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: var(--space-md);
+}
+
+.timeline-item.left {
+    left: 0;
+    padding-right: var(--space-2xl);
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: var(--space-2xl);
+    text-align: left;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 3px solid var(--color-surface-bg);
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 16px var(--color-primary);
+    z-index: 2;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -7px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -7px;
+}
+
+.timeline-card {
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timeline-year {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    font-family: var(--font-body);
+}
+
+.timeline-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.timeline-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 576px) {
+    .timeline-line {
+        left: 20px;
+    }
+
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        width: 100%;
+        padding-left: calc(20px + var(--space-2xl));
+        padding-right: var(--space-md);
+        text-align: left;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: 13px;
+        right: auto;
+    }
+
+    .timeline-card {
+        padding: var(--space-md);
+    }
+}

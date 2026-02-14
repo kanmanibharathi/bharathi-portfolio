@@ -1,0 +1,90 @@
+/* ---- Premium Dark / Light Toggle ---- */
+.theme-toggle {
+    position: relative;
+    z-index: 200;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.1),
+        0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--color-primary);
+    transform: translateY(-1px);
+    box-shadow:
+        0 10px 20px -10px var(--color-primary),
+        inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-track {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.toggle-thumb {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 12px var(--color-primary);
+    z-index: 3;
+}
+
+.thumb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.track-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+}
+
+/* Specific mode adjustments */
+.theme-toggle.dark {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.theme-toggle.light .toggle-thumb {
+    background: #f59e0b;
+    /* Warmer amber for sun mode */
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.5);
+}
+
+.theme-toggle.dark .toggle-thumb {
+    background: #6366f1;
+    /* Deep indigo for moon mode */
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.5);
+}
