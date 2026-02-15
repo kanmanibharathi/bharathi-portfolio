@@ -1,0 +1,95 @@
+.battery-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    padding: 5px 10px;
+    background: rgba(var(--color-bg-rgb), 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+}
+
+.battery-container:hover {
+    transform: translateY(-2px);
+}
+
+
+.battery-outer {
+    width: 60px;
+    height: 24px;
+    border: 2px solid var(--color-text-secondary);
+    border-radius: 6px;
+    padding: 2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.battery-inner {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s ease;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+}
+
+.battery-inner.low-battery {
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+    background: linear-gradient(90deg, #fbbf24 0%, #fcd34d 100%);
+    animation: pulse 2s infinite;
+}
+
+.battery-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), transparent);
+    pointer-events: none;
+}
+
+.battery-cap {
+    width: 3px;
+    height: 8px;
+    background: var(--color-text-secondary);
+    border-radius: 0 2px 2px 0;
+    margin-left: -2px;
+}
+
+.battery-percentage {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    min-width: 35px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Base theme variables if not defined */
+:root {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a1a1aa;
+}
+
+/* Adjust for light/dark if needed through context or existing vars */
+[data-theme='light'] .battery-container {
+    background: rgba(0, 0, 0, 0.05);
+}

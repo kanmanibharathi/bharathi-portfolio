@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
+import BatteryIndicator from './BatteryIndicator';
 import './Footer.css';
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
     return (
         <footer className="site-footer">
             <div className="container footer-content">
-
+                <BatteryIndicator />
                 <p className="footer-copyright">
                     © {year} Kanmani Bharathi. Crafted with passion.
                 </p>
