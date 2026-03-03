@@ -7,8 +7,8 @@ const projects = [
     // ... (data remains same)
     {
         title: 'Business Website - Product',
-        description: 'One Research Hub',
-        link: 'https://oneresearchhub.in/',
+        description: 'ZYNDORA',
+        link: 'https://zyndora.in',
         type: 'Web',
         tags: ['Business', 'Product']
     },
@@ -22,14 +22,14 @@ const projects = [
     {
         title: 'Harvest - Data Analyzer',
         description: 'Statistical tools Web App',
-        link: 'https://www.oneresearchhub.in/data-anal/data-analyzer',
+        link: 'https://zyndora.in/pages/data-analyzer',
         type: 'Web App',
         tags: ['Statistics', 'Data Analysis']
     },
     {
         title: 'Akira Hub',
         description: 'Wet-Lab tools Web App',
-        link: 'https://www.oneresearchhub.in/modules/akira-hub/akira-hub',
+        link: 'https://zyndora.in/pages/akira-hub',
         type: 'Web App',
         tags: ['Wet-Lab', 'Tools']
     },
