@@ -52,7 +52,7 @@ export const storeroomTheme = {
         { name: 'Designs', level: 65, icon: '🎨' },
         { name: 'Fitness', level: 70, icon: '🏋️‍♂️' },
     ],
-    heroTitle: 'Polymath',
+    heroTitle: '',
     heroSubtitle: 'A room full of hidden talents',
     heroDescription: 'From cooking to electronics, script writing to home automation — a collection of diverse pursuits that fuel creativity and innovation.',
     socialLinks: [

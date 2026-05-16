@@ -5,6 +5,38 @@ import './PublicationsSection.css';
 
 const publications = [
     {
+        title: 'Gene Editing in Mungbean: Opportunities and Challenges',
+        authors: 'Kanmani Bharathi, J., Selvamani, S., Paramasivam, S., Wang, S.',
+        journal: 'Springer-Singapore - Mungbean',
+        year: 2026,
+        type: 'book',
+        doi: '10.1007/978-981-95-7637-1_10',
+    },
+    {
+        title: 'Molecular Breeding Approaches for Abiotic Stress Tolerance in Mungbean (Vigna radiata L. Wilczek)',
+        authors: 'Paramasivam, S., Sasikala, K., Kanmani Bharathi, J., Rajesh, S., Pandiyan, M.',
+        journal: 'Springer-Singapore - Mungbean',
+        year: 2026,
+        type: 'book',
+        doi: '10.1007/978-981-95-7637-1_7',
+    },
+    {
+        title: 'In Vitro Regeneration and Genetic Transformation of Mungbean',
+        authors: 'Paramasivam, S., Kanmani Bharathi, J., Selvamani, S., Wang, S.',
+        journal: 'Springer, Singapore - Mungbean',
+        year: 2026,
+        type: 'book',
+        doi: '10.1007/978-981-95-7637-1_9',
+    },
+    {
+        title: 'Standardization of tissue culture techniques for propagation of Melochia corchorifolia L. and analysis of phytochemical and antioxidant activity of methanol extracts',
+        authors: 'Murali, S., Kanmani Bharathi, J., Prakash, M.',
+        journal: 'South African Journal of Botany',
+        year: 2026,
+        type: 'journal',
+        doi: '10.1016/j.sajb.2026.03.020',
+    },
+    {
         title: 'Development of an efficient in vitro system for micropropagation and regeneration of Justicia adhatoda, Sida acuta, Pimenta dioica, and Premna integrifolia',
         authors: 'Poornalakshmi, M., Kanmani Bharathi, J., Sai Prathyusha Neelam, S., Gurumoorthy, P., Divya, M., Prakash., & Anandan, R.',
         journal: 'Discover Plants',
