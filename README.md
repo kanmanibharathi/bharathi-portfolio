@@ -1,4 +1,4 @@
-# 🌐 Polymath Portfolio — Kanmani Bharathi
+# 🌐 Portfolio — Kanmani Bharathi
 
 A dynamic, multi-themed portfolio website designed to showcase expertise across diverse domains: **Life Sciences (Biotech)**, **Software Development**, **Graphic Design**, **Gaming World**, and a curated **Store Room** of hidden talents.
 
