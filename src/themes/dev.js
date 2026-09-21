@@ -1,4 +1,4 @@
-import developerImg from '../assets/developer.png';
+import developerImg from '../assets/developer.webp';
 
 export const devTheme = {
     name: 'dev',

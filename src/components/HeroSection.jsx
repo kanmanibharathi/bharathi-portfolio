@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeContext } from '../contexts/ThemeContext';
-import profileImg from '../assets/JK.png';
-import academiaImg from '../assets/academia.png';
-import cvPDF from '../assets/docs/Kanmani_Bharathi_CV.pdf';
+import profileImg from '../assets/JK.webp';
+import academiaImg from '../assets/academia.webp';
+import cvPDF from '../assets/docs/KANMANI_BHARATHI_CV.pdf';
 import './HeroSection.css';
 
 const SocialIcon = ({ type }) => {

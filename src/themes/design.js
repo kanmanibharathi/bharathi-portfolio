@@ -1,4 +1,4 @@
-import designImg from '../assets/grapic.png';
+import designImg from '../assets/grapic.webp';
 
 export const designTheme = {
     name: 'design',

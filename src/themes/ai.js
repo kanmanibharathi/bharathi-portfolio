@@ -1,4 +1,4 @@
-import gameImg from '../assets/game.png';
+import gameImg from '../assets/game.webp';
 
 export const aiTheme = {
     name: 'ai',

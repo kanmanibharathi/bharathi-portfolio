@@ -5,6 +5,14 @@ import './PublicationsSection.css';
 
 const publications = [
     {
+        title: 'Bioassay-guided discovery of antidiabetic phytochemicals from methyl jasmonate-elicited callus of Dodonaea viscosa (L.) Jacq.: A multitarget therapeutic approach.',
+        authors: 'Kanmani Bharathi, J., Akash, K., Rameshkumar, S., Anandan, R., Prakash, M.',
+        journal: 'Journal of the Indian Chemical Society',
+        year: 2026,
+        type: 'journal',
+        doi: '10.1016/j.jics.2026.102883',
+    },
+    {
         title: 'Gene Editing in Mungbean: Opportunities and Challenges',
         authors: 'Kanmani Bharathi, J., Selvamani, S., Paramasivam, S., Wang, S.',
         journal: 'Springer-Singapore - Mungbean',

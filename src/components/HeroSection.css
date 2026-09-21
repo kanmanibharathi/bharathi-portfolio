@@ -265,12 +265,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center top;
-    transform: translateY(-35px) scale(1.2);
+    transform: scale(1);
     border-radius: 50%;
 }
 
 [data-theme^="dev"] .profile-placeholder:hover .hero-profile-img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 /* Floating Social Icons */
