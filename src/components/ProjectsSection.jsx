@@ -49,13 +49,21 @@ const projects = [
     }
 ];
 
+const datesProject = {
+    title: 'DATES',
+    description: 'Data Analysis Tool for Experimental Statistics — a unified platform for statistical analysis, visualization, and research-ready results.',
+    link: 'http://dates.zyndora.in/',
+    type: 'Web App',
+    tags: ['Data Analysis', 'Research Tool']
+};
+
 export default function ProjectsSection() {
     const { theme } = useContext(ThemeContext);
     const scrollRef = useRef(null);
 
-    if (theme.name !== 'dev' && theme.name !== 'design') return null;
+    if (theme.name !== 'dev' && theme.name !== 'design' && theme.name !== 'biotech') return null;
 
-    const displayProjects = theme.name === 'dev' ? projects : [];
+    const displayProjects = theme.name === 'biotech' ? [datesProject] : theme.name === 'dev' ? projects : [];
 
     const handleMouseDown = (e) => {
         const slider = scrollRef.current;
@@ -96,7 +104,7 @@ export default function ProjectsSection() {
                         <span className="text-gradient">Projects</span>
                     </h2>
                     <p className="section-subtitle">
-                        {theme.name === 'dev' ? 'Innovative tools and platforms for science' : 'Selected Works'}
+                        {theme.name === 'dev' ? 'Innovative tools and platforms for science' : theme.name === 'biotech' ? 'Computational tools for translational research' : 'Selected Works'}
                     </p>
                 </motion.div>
 

@@ -156,7 +156,7 @@ const recognitionData = [
 
 export default function RecognitionSection() {
     const { theme } = useContext(ThemeContext);
-    const [filter, setFilter] = useState('none');
+    const [filter, setFilter] = useState('awards');
 
     if (theme.name === 'dev' || theme.name === 'design' || theme.name === 'ai' || theme.name === 'storeroom') return null;
 

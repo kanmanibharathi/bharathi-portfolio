@@ -223,3 +223,48 @@
     opacity: 1;
     transform: translate(0, 0);
 }
+
+/* ---- Academic Excellence (biotech): single centred DATES card ---- */
+[data-theme^="biotech"] .projects-section {
+    margin-bottom: -1.5rem;
+    /* Tighten the Projects -> Publications transition */
+}
+
+[data-theme^="biotech"] .projects-section .projects-scroll-container,
+[data-theme^="biotech"] .projects-section .projects-grid {
+    width: 100%;
+    max-width: none;
+    padding-right: 0;
+    overflow: visible;
+    cursor: default;
+}
+
+[data-theme^="biotech"] .projects-section .projects-grid {
+    display: flex;
+    justify-content: center;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    margin-top: var(--space-lg);
+}
+
+[data-theme^="biotech"] .projects-section .project-card {
+    width: 100%;
+    max-width: 480px;
+    min-height: 240px;
+}
+
+[data-theme^="biotech"] .projects-section .swipe-indicator {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    /* Let the card shrink to the container instead of the scroll-snap width */
+    [data-theme^="biotech"] .projects-section .project-card {
+        max-width: 100%;
+    }
+}
+
+[data-theme^="biotech"] .publications-section {
+    padding-top: 0 !important;
+}

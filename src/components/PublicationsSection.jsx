@@ -53,6 +53,14 @@ const publications = [
         doi: '10.1007/s44372-026-00477-4',
     },
     {
+        title: 'Synergistic Effect of Styrofoam Fed Mealworm Gut Bacterial Strain Priestia megaterium RP1/S1 and Organic Amendments Enhances LDPE Biodegradation in Soil',
+        authors: 'Akash, K., Parthasarathi, R., Kanmani Bharathi, J., & Elango, R.',
+        journal: 'Journal of Hazardous Materials',
+        year: 2026,
+        type: 'journal',
+        doi: '10.1016/j.jhazmat.2026.143045',
+    },
+    {
         title: 'Exploring the Role of Microbes in the Biodegradation of Plastic Waste: Mechanisms, Interactions, and Implications for Sustainable Waste Management-A Review',
         authors: 'Akash, K., Parthasarathi, R., Kanmani Bharathi, J., & Elango, R.',
         journal: 'Water, Air, & Soil Pollution',
@@ -160,7 +168,7 @@ const publications = [
 
 export default function PublicationsSection() {
     const { theme } = useContext(ThemeContext);
-    const [filter, setFilter] = useState('none');
+    const [filter, setFilter] = useState('journal');
 
     if (theme.name === 'dev' || theme.name === 'design' || theme.name === 'ai' || theme.name === 'storeroom') return null;
 
