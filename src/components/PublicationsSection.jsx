@@ -5,6 +5,14 @@ import './PublicationsSection.css';
 
 const publications = [
     {
+        title: 'Bugs to biocatalysts: Insect gut consortia for plastic degradation – A review',
+        authors: 'Akash, K., Mathimaran, N., Kanmani Bharathi, J., Parthasarathi, R., Kanagavalli, A., & Dubey, N.',
+        journal: 'Journal of Environmental Chemical Engineering',
+        year: 2026,
+        type: 'journal',
+        doi: '10.1016/j.jece.2026.125542',
+    },
+    {
         title: 'Bioassay-guided discovery of antidiabetic phytochemicals from methyl jasmonate-elicited callus of Dodonaea viscosa (L.) Jacq.: A multitarget therapeutic approach.',
         authors: 'Kanmani Bharathi, J., Akash, K., Rameshkumar, S., Anandan, R., Prakash, M.',
         journal: 'Journal of the Indian Chemical Society',

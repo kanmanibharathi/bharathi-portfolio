@@ -46,16 +46,32 @@ const projects = [
         link: 'https://github.com/kanmanibharathi/SeqAnalysis/releases/tag/v1.0.13',
         type: 'Application',
         tags: ['Bioinformatics', 'Tool']
+    },
+    {
+        title: 'ALICE',
+        description: 'Analytical Laboratory Intelligence for Calculations and Experiments – web-based laboratory calculation and analytical tool.',
+        link: 'https://zyndora.in',
+        type: 'Web App',
+        tags: ['Laboratory Tool', 'Calculations', 'Analytics']
     }
 ];
 
-const datesProject = {
-    title: 'DATES',
-    description: 'Data Analysis Tool for Experimental Statistics — a unified platform for statistical analysis, visualization, and research-ready results.',
-    link: 'http://dates.zyndora.in/',
-    type: 'Web App',
-    tags: ['Data Analysis', 'Research Tool']
-};
+const biotechProjects = [
+    {
+        title: 'DATES',
+        description: 'Data Analysis Tool for Experimental Statistics — a unified platform for statistical analysis, visualization, and research-ready results.',
+        link: 'http://dates.zyndora.in/',
+        type: 'Web App',
+        tags: ['Data Analysis', 'Research Tool']
+    },
+    {
+        title: 'ALICE',
+        description: 'Analytical Laboratory Intelligence for Calculations and Experiments – web-based laboratory calculation and analytical tool.',
+        link: 'https://zyndora.in',
+        type: 'Web App',
+        tags: ['Laboratory Tool', 'Calculations', 'Analytics']
+    }
+];
 
 export default function ProjectsSection() {
     const { theme } = useContext(ThemeContext);
@@ -63,7 +79,7 @@ export default function ProjectsSection() {
 
     if (theme.name !== 'dev' && theme.name !== 'design' && theme.name !== 'biotech') return null;
 
-    const displayProjects = theme.name === 'biotech' ? [datesProject] : theme.name === 'dev' ? projects : [];
+    const displayProjects = theme.name === 'biotech' ? biotechProjects : theme.name === 'dev' ? projects : [];
 
     const handleMouseDown = (e) => {
         const slider = scrollRef.current;

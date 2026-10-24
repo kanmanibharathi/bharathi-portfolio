@@ -241,14 +241,16 @@
 
 [data-theme^="biotech"] .projects-section .projects-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: var(--space-lg);
     grid-template-rows: none;
     grid-auto-flow: row;
     margin-top: var(--space-lg);
 }
 
 [data-theme^="biotech"] .projects-section .project-card {
-    width: 100%;
+    flex: 1 1 360px;
     max-width: 480px;
     min-height: 240px;
 }
